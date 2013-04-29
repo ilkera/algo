@@ -1,0 +1,76 @@
+<Query Kind="Program" />
+
+void Main()
+{
+	string s1 = "aabcc";
+	string s2 = "dbbca";
+	string s3 = "aadbbcbcac";
+	
+	Console.WriteLine("Is interleaving? {0}", InterleavingString.IsInterleaving(s1,s2,s3));
+}
+
+public class InterleavingString
+{
+	public static bool IsInterleaving(string first, string second, string interleaving)
+	{
+		if(string.IsNullOrEmpty(first) && string.IsNullOrEmpty(second))
+		{
+			return string.IsNullOrEmpty(interleaving);
+		}
+		
+		if(string.IsNullOrEmpty(first))
+		{
+			return String.Equals(second, interleaving);
+		}
+		
+		if(string.IsNullOrEmpty(second))
+		{
+			return String.Equals(first, interleaving);
+		}
+		
+		HashSet<string> cache = new HashSet<string>();
+		
+		return IsShuffle(first, second, interleaving, cache);
+	}
+	
+	private static bool IsShuffle(string first, string second, string interleaving, HashSet<string> cache)
+	{
+		Console.WriteLine("First: {0} Second: {1} Interleaving: {2}", first, second, interleaving);
+		
+		if(cache.Contains(string.Concat(first, second)) == true)
+		{
+			return false;
+		}
+		
+		if(first.Length + second.Length != interleaving.Length)
+		{
+			return false;
+		}
+		
+		if(first == string.Empty || second == string.Empty)
+		{
+			return String.Equals(first + second, interleaving);
+		}
+		
+		if(interleaving[0] != first[0] && interleaving[0] != second[0])
+		{
+			return false;
+		}
+		
+		if(interleaving[0] == first[0] && IsShuffle(first.Substring(1), second, interleaving.Substring(1), cache))
+		{
+			return true;
+		}
+		
+		if(interleaving[0] == second[0] && IsShuffle(first, second.Substring(1), interleaving.Substring(1), cache))
+		{
+			return true;
+		}
+		
+		cache.Add(string.Concat(first, second));
+		
+		return false;
+	}
+}
+
+// Define other methods and classes here
