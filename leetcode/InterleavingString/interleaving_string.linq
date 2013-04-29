@@ -32,6 +32,11 @@ public class InterleavingString
 			return string.IsNullOrEmpty(interleaving);
 		}
 		
+		if(string.IsNullOrEmpty(interleaving))
+		{
+			return false;
+		}
+		
 		if(string.IsNullOrEmpty(first))
 		{
 			return String.Equals(second, interleaving);
@@ -44,10 +49,10 @@ public class InterleavingString
 		
 		HashSet<string> cache = new HashSet<string>();
 		
-		return IsShuffle(first, second, interleaving, cache);
+		return IsInterleaving(first, second, interleaving, cache);
 	}
 	
-	private static bool IsShuffle(string first, string second, string interleaving, HashSet<string> cache)
+	private static bool IsInterleaving(string first, string second, string interleaving, HashSet<string> cache)
 	{
 		Console.WriteLine("First: {0} Second: {1} Interleaving: {2}", first, second, interleaving);
 		
@@ -71,12 +76,12 @@ public class InterleavingString
 			return false;
 		}
 		
-		if(interleaving[0] == first[0] && IsShuffle(first.Substring(1), second, interleaving.Substring(1), cache))
+		if(interleaving[0] == first[0] && IsInterleaving(first.Substring(1), second, interleaving.Substring(1), cache))
 		{
 			return true;
 		}
 		
-		if(interleaving[0] == second[0] && IsShuffle(first, second.Substring(1), interleaving.Substring(1), cache))
+		if(interleaving[0] == second[0] && IsInterleaving(first, second.Substring(1), interleaving.Substring(1), cache))
 		{
 			return true;
 		}
