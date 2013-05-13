@@ -52,7 +52,7 @@ public class IntegerUtils
 			number /= 10;
 		}
 		
-		if(result < int.MinValue && result > int.MaxValue)
+		if(result < int.MinValue || result > int.MaxValue)
 		{
 			throw new OverflowException("overflow");
 		}
