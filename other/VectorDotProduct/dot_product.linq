@@ -2,6 +2,7 @@
 
 /* Problem: Find dot product of given two 2D vectors.
 
+Ref: http://www.mathsisfun.com/algebra/vectors-dot-product.html
 */
 
 void Main()
