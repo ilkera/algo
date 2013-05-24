@@ -22,6 +22,20 @@ void Main()
 	
 	Console.WriteLine(VectorUtils.FindDotProduct(new decimal[] { 1, 3, -5 }, new decimal[] { 4, -2, -1 }));
 	
+	SortedList<int, double> listFirst = new SortedList<int, double>();
+	listFirst.Add(1, 0.5);
+	listFirst.Add(3, 0.7);
+	listFirst.Add(12, 1.3);
+	
+	SortedList<int, double> listSecond = new SortedList<int, double>();
+	listSecond.Add(2, 0.4);
+	listSecond.Add(3, 2.3);
+	listSecond.Add(12, 4.7);
+	
+	double resultOfTwoSparseVectors = VectorUtils.FindDotProduct(listFirst, listSecond);
+	resultOfTwoSparseVectors.Dump();
+	// (1, 0.5), (3, 0.7), (12, 1.3)> * <(2, 0.4), (3, 2.3), (12, 4.7)
+	
 }
 
 public class VectorUtils
@@ -77,6 +91,45 @@ public class VectorUtils
 	private static double DegreeToRadian(double angle)
 	{
    		return Math.PI * angle / 180.0;
+	}
+	
+	public static double FindDotProduct(SortedList<int, double> vFirst, SortedList<int, double> vSecond)
+	{
+		if(vFirst == null || vFirst.Count == 0)
+		{
+			return 0;
+		}
+		
+		if(vSecond == null || vSecond.Count == 0)
+		{
+			return 0;
+		}
+		
+		double result = 0;
+		int iFirst = 0;
+		int iSecond = 0;
+		
+		while(iFirst < vFirst.Count && iSecond < vSecond.Count)
+		{
+			KeyValuePair<int, double> currentFirst = vFirst.ElementAt(iFirst);
+			KeyValuePair<int, double> currentSecond = vSecond.ElementAt(iSecond);
+			
+			if(currentFirst.Key == currentSecond.Key)
+			{
+				result += currentFirst.Value * currentSecond.Value;
+				iFirst++;
+				iSecond++;
+			}
+			else if (currentFirst.Key < currentSecond.Key)
+			{
+				iFirst++;
+			}
+			else
+			{
+				iSecond++;
+			}
+		}
+		return result;
 	}
 }
 
