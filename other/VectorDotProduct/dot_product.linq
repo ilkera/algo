@@ -17,6 +17,11 @@ void Main()
 	double productWithCos = VectorUtils.FindDotProduct(10, 13, 59.5);
 	
 	productWithCos.Dump();
+	
+	Console.WriteLine(VectorUtils.FindDotProduct(new decimal[] { -6, 8 }, new decimal[] { 5, 12 }));
+	
+	Console.WriteLine(VectorUtils.FindDotProduct(new decimal[] { 1, 3, -5 }, new decimal[] { 4, -2, -1 }));
+	
 }
 
 public class VectorUtils
@@ -33,6 +38,33 @@ public class VectorUtils
 		int yProduct = vFirst.Y * vSecond.Y;
 		
 		return xProduct + yProduct;
+	}
+	
+	public static decimal FindDotProduct(decimal[] firstVector, decimal[] secondVector)
+	{
+		if(firstVector == null || firstVector.Length == 0)
+		{
+			return 0;
+		}
+		
+		if(secondVector == null || secondVector.Length == 0)
+		{
+			return 0;
+		}
+		
+		if(firstVector.Length != secondVector.Length)
+		{
+			return 0;
+		}
+		
+		decimal result = 0;
+		
+		for (int i = 0; i < firstVector.Length; i++)
+		{
+			result += firstVector[i] * secondVector[i];
+		}
+		
+		return result;
 	}
 	
 	// dotProduct = |firstLength| * |secondLength| * cos(X)
