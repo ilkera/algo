@@ -4,6 +4,9 @@
 
 Def: Provide a surrogate or placeholder for another object to control access to it
 
+Problem:
+You need to support resource-hungry objects, and you do not want to instantiate such objects unless and until they are actually requested by the client.
+
 Responsibilities: 
 
 1 - remote proxies
@@ -14,6 +17,8 @@ may cache additional information about the real subject so that they can postpon
 
 3 - protection proxies
 check that the caller has the access permissions required to perform a request.
+
+Link: http://sourcemaking.com/design_patterns/proxy
 
 */
 void Main()
