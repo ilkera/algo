@@ -15,16 +15,16 @@ void Main()
 						new Node(12),
 						new Node(16)));
 						
-	NodeTraversals.PreOrder(tree);
+	TreeTraversals.PreOrder(tree);
 	
-	NodeTraversals.InOrder(tree);
+	TreeTraversals.InOrder(tree);
 	
-	NodeTraversals.PostOrder_UsingTwoStacks(tree);
+	TreeTraversals.PostOrder_UsingTwoStacks(tree);
 	
-	NodeTraversals.PostOrder(tree);
+	TreeTraversals.PostOrder(tree);
 }
 
-public class NodeTraversals
+public class TreeTraversals
 {
 	public static void PostOrder(Node node)
 	{
