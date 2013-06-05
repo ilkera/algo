@@ -2,7 +2,18 @@
 
 void Main()
 {
+	Graph graph = new Graph(9);
+	graph.AddEdge(0, 1);
+	graph.AddEdge(2, 3);
+	graph.AddEdge(4, 5);
+	graph.AddEdge(6, 7);
+	graph.AddEdge(8, 0);
+
 	
+	graph.Display();
+	
+	BipartiteGraph bg = new BipartiteGraph(graph);
+	Console.WriteLine("Is bipartite? " + bg.IsBipartiteGraph);
 }
 
 public class BipartiteGraph
@@ -35,7 +46,7 @@ public class BipartiteGraph
 			if(this._marked[adjacent] == false)
 			{
 				this._color[adjacent] = !this._color[current];
-				Dfs(graph, adjacent, current);
+				Dfs(graph, adjacent);
 			}
 			else if(this._color[current] == this._color[adjacent])
 			{
