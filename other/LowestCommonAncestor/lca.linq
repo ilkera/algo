@@ -55,6 +55,7 @@ void Main()
 	Console.WriteLine("LCA v2 of {0} and {1} is {2}", eight.Value, three.Value, TreeUtils.FindLCA_v2(tree, eight, three).Value);
 	Console.WriteLine("LCA v2 of {0} and {1} is {2}", seven.Value, three.Value, TreeUtils.FindLCA_v2(tree, seven, three).Value);
 	Console.WriteLine("LCA v2 of {0} and {1} is {2}", seven.Value, ten.Value, TreeUtils.FindLCA_v2(tree, seven, ten).Value);
+	Console.WriteLine("LCA v2 of {0} and {1} is {2}", two.Value, five.Value, TreeUtils.FindLCA_v2(tree, two, five).Value);
 	
 }
 
