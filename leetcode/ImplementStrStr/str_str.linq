@@ -14,40 +14,37 @@ void Main()
 
 public class StringUtils
 {
-	public static string strStr(string str, string subStr)
+	public static string strStr(string str, string pattern)
 	{
-		if(string.IsNullOrEmpty(str) || string.IsNullOrEmpty(subStr))
+		if(string.IsNullOrEmpty(str) || string.IsNullOrEmpty(pattern))
 		{
-			if (str.Equals(subStr) == true)
-			{
-				return str;
-			}
-			return null;
+			return str;
 		}
 		
-		int lenStr = str.Length;
-		int lenSubStr = subStr.Length;
+		int strLen= str.Length;
+		int patternLen = pattern.Length;
 		
 		int iCurrent = 0;
-		while(iCurrent < lenStr - lenSubStr + 1)
+		while(iCurrent < strLen- patternLen + 1)
 		{
-			if(str[iCurrent] != subStr[0])
+			if(str[iCurrent] != pattern[0])
 			{
 				iCurrent++;
 				continue;
 			}
 			
 			int iSubCurrent = 0;
-			while(iSubCurrent < lenSubStr && str[iCurrent] == subStr[iSubCurrent])
+			while(iSubCurrent < patternLen && str[iCurrent] == pattern[iSubCurrent])
 			{
 				iCurrent++;
 				iSubCurrent++;
 			}
 			
-			if(iSubCurrent == lenSubStr)
+			if(iSubCurrent == patternLen)
 			{
-				return str.Substring(iCurrent-iSubCurrent, lenSubStr);
+				return str.Substring(iCurrent-iSubCurrent, patternLen);
 			}
+			iCurrent = iCurrent - iSubCurrent + 1;
 		}
 		return null;
 	}
