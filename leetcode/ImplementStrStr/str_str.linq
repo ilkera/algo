@@ -21,30 +21,27 @@ public class StringUtils
 			return str;
 		}
 		
-		int strLen= str.Length;
+		int strLen = str.Length;
 		int patternLen = pattern.Length;
 		
 		int iCurrent = 0;
 		while(iCurrent < strLen- patternLen + 1)
 		{
-			if(str[iCurrent] != pattern[0])
+			int iSub = 0;
+			for (iSub = 0; iSub < patternLen; iSub++)
 			{
-				iCurrent++;
-				continue;
+				if(str[iCurrent + iSub] != pattern[iSub])
+				{
+					break;
+				}
 			}
 			
-			int iSubCurrent = 0;
-			while(iSubCurrent < patternLen && str[iCurrent] == pattern[iSubCurrent])
+			if(iSub == patternLen)
 			{
-				iCurrent++;
-				iSubCurrent++;
+				return str.Substring(iCurrent, patternLen);
 			}
 			
-			if(iSubCurrent == patternLen)
-			{
-				return str.Substring(iCurrent-iSubCurrent, patternLen);
-			}
-			iCurrent = iCurrent - iSubCurrent + 1;
+			iCurrent++;
 		}
 		return null;
 	}
