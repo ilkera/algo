@@ -54,7 +54,7 @@ public class ListUtil
 			preNode = curNode;
 			curNode = curNode.Next;
 			
-			// Case 2: Value to be inserted is in the middle
+			// Case 2: Value to be inserted is in the middle, or duplicate
 			if (curNode.Data >= valueToBeInserted && valueToBeInserted >= preNode.Data)
 			{
 				break;
