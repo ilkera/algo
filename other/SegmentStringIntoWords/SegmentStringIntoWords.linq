@@ -24,7 +24,7 @@ void Main()
 public class StringUtils
 {
 	// v2 with Cache - Dynamic Programming
-	public static string Segment_v3(string input, HashSet<string> dict, HashSet<string> cache)
+	public static string Segment_v3(string input, HashSet<string> dict, HashSet<stsring> cache)
 	{
 		if (string.IsNullOrEmpty(input) == true || dict.Contains(input) == true)
 		{
