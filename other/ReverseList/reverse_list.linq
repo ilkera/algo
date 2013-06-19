@@ -16,10 +16,47 @@ void Main()
 	
 	//list.Dump();
 	
+//	Node reversed = ListUtils.Reverse(list);
+	
+//	list.Dump();
+	
+//	reversed.Dump();
+	
 }
 
 public class ListUtils
 {	
+	public static Node Reverse(Node list)
+	{
+		Node cloneCopy = Clone(list);
+		
+		Reverse(ref cloneCopy);
+		
+		return cloneCopy;	
+	}
+	
+	public static Node Clone(Node list)
+	{
+		if (list == null)
+		{
+			return null;
+		}
+		
+		Node newHead = new Node(list.Value);
+		Node curNode = list.Next;
+		Node copyNode = newHead;
+		
+		while (curNode != null)
+		{
+			copyNode.Next = new Node(curNode.Value);
+			curNode = curNode.Next;
+			copyNode = copyNode.Next;
+		}
+		
+		return newHead;
+		
+	}
+	
 	public static void Reverse(ref Node list)
 	{
 		if (list == null || list.Next == null)
