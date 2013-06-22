@@ -4,7 +4,7 @@
     <list default="true" id="6b291264-d239-49f8-98f7-bce21094446d" name="Default" comment="" />
     <ignored path="py.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/two_sum.py" changelist="6b291264-d239-49f8-98f7-bce21094446d" time="1371945083164" ignored="false" />
+    <file path="/two_sum.py" changelist="6b291264-d239-49f8-98f7-bce21094446d" time="1371945220089" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +27,7 @@
       <file leaf-file-name="two_sum.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/two_sum.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="502" selection-end="502" vertical-scroll-proportion="0.6040609">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -248,7 +248,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/two_sum.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="502" selection-end="502" vertical-scroll-proportion="0.6040609">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
