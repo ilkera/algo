@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fec077f7-fd74-4e69-8071-c1bf1d754dd6" name="Default" comment="" />
-    <ignored path="MedianInAStream.iws" />
+    <list default="true" id="c356eaa9-96fd-45d7-867d-d7e752286b93" name="Default" comment="" />
+    <ignored path="py.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/median_stream.py" changelist="fec077f7-fd74-4e69-8071-c1bf1d754dd6" time="1372030533568" ignored="false" />
+    <file path="/reverse_words_in_sentence.py" changelist="c356eaa9-96fd-45d7-867d-d7e752286b93" time="1372031754684" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,14 +20,14 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="MedianInAStream" />
+    <favorites_list name="py" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="median_stream.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/median_stream.py">
+      <file leaf-file-name="reverse_words_in_sentence.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/reverse_words_in_sentence.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="4" column="15" selection-start="155" selection-end="155" vertical-scroll-proportion="0.17258883">
               <folding />
             </state>
           </provider>
@@ -43,7 +43,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/median_stream.py" />
+        <option value="$PROJECT_DIR$/reverse_words_in_sentence.py" />
       </list>
     </option>
   </component>
@@ -83,17 +83,17 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MedianInAStream" />
+              <option name="myItemId" value="py" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MedianInAStream" />
+              <option name="myItemId" value="py" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MedianInAStream" />
+              <option name="myItemId" value="py" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -107,8 +107,8 @@
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.median_stream">
-    <configuration default="false" name="median_stream" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.reverse_words_in_sentence">
+    <configuration default="false" name="reverse_words_in_sentence" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -119,9 +119,9 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="MedianInAStream" />
+      <module name="py" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/median_stream.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/reverse_words_in_sentence.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -138,27 +138,27 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="MedianInAStream" />
+      <module name="py" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Python.median_stream" />
+      <item index="0" class="java.lang.String" itemvalue="Python.reverse_words_in_sentence" />
     </list>
     <recent_temporary>
       <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python.median_stream" />
+        <item index="0" class="java.lang.String" itemvalue="Python.reverse_words_in_sentence" />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="fec077f7-fd74-4e69-8071-c1bf1d754dd6" name="Default" comment="" />
-      <created>1372026522448</created>
-      <updated>1372026522448</updated>
+      <changelist id="c356eaa9-96fd-45d7-867d-d7e752286b93" name="Default" comment="" />
+      <created>1372031287499</created>
+      <updated>1372031287499</updated>
     </task>
     <servers />
   </component>
@@ -174,7 +174,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3290735" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -246,9 +246,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/median_stream.py">
+    <entry file="file://$PROJECT_DIR$/reverse_words_in_sentence.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="4" column="15" selection-start="155" selection-end="155" vertical-scroll-proportion="0.17258883">
           <folding />
         </state>
       </provider>
