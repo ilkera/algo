@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="681aae41-a593-454e-8321-bd43f5e11dd5" name="Default" comment="" />
-    <ignored path="MergeIntervals.iws" />
+    <list default="true" id="ebbcf1d6-b355-4bcf-886c-3a7487999fa3" name="Default" comment="" />
+    <ignored path="InsertInterval.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/merge_intervals.py" changelist="681aae41-a593-454e-8321-bd43f5e11dd5" time="1372038932472" ignored="false" />
+    <file path="/insert_interval.py" changelist="ebbcf1d6-b355-4bcf-886c-3a7487999fa3" time="1372041679065" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,14 +20,14 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="MergeIntervals" />
+    <favorites_list name="InsertInterval" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="merge_intervals.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/merge_intervals.py">
+      <file leaf-file-name="insert_interval.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/insert_interval.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="33" selection-start="724" selection-end="724" vertical-scroll-proportion="0.5177665">
+            <state line="13" column="56" selection-start="467" selection-end="467" vertical-scroll-proportion="0.043147206">
               <folding />
             </state>
           </provider>
@@ -43,7 +43,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/merge_intervals.py" />
+        <option value="$PROJECT_DIR$/insert_interval.py" />
       </list>
     </option>
   </component>
@@ -79,27 +79,27 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MergeIntervals" />
+              <option name="myItemId" value="InsertInterval" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MergeIntervals" />
+              <option name="myItemId" value="InsertInterval" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MergeIntervals" />
+              <option name="myItemId" value="InsertInterval" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -107,8 +107,8 @@
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.merge_intervals">
-    <configuration default="false" name="merge_intervals" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.insert_interval">
+    <configuration default="false" name="insert_interval" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -119,9 +119,9 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="MergeIntervals" />
+      <module name="InsertInterval" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/merge_intervals.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/insert_interval.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -138,27 +138,27 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="MergeIntervals" />
+      <module name="InsertInterval" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Python.merge_intervals" />
+      <item index="0" class="java.lang.String" itemvalue="Python.insert_interval" />
     </list>
     <recent_temporary>
       <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python.merge_intervals" />
+        <item index="0" class="java.lang.String" itemvalue="Python.insert_interval" />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="681aae41-a593-454e-8321-bd43f5e11dd5" name="Default" comment="" />
-      <created>1372034797533</created>
-      <updated>1372034797533</updated>
+      <changelist id="ebbcf1d6-b355-4bcf-886c-3a7487999fa3" name="Default" comment="" />
+      <created>1372039793490</created>
+      <updated>1372039793490</updated>
     </task>
     <servers />
   </component>
@@ -174,7 +174,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3290735" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -246,9 +246,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/merge_intervals.py">
+    <entry file="file://$PROJECT_DIR$/insert_interval.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="33" selection-start="724" selection-end="724" vertical-scroll-proportion="0.5177665">
+        <state line="13" column="56" selection-start="467" selection-end="467" vertical-scroll-proportion="0.043147206">
           <folding />
         </state>
       </provider>
