@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23f298c4-a1eb-4701-8d44-2057ffd929de" name="Default" comment="" />
-    <ignored path="ConvertSortedArrayToBinarySearchTree.iws" />
+    <list default="true" id="2fb922fe-840a-4155-a1c0-392bf6c1cd38" name="Default" comment="" />
+    <ignored path="IntersectionOfTwoLists.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/convert_to_bst.py" changelist="23f298c4-a1eb-4701-8d44-2057ffd929de" time="1372428550122" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="23f298c4-a1eb-4701-8d44-2057ffd929de" time="1372429332947" ignored="false" />
+    <file path="/intersection_of_two_lists.py" changelist="2fb922fe-840a-4155-a1c0-392bf6c1cd38" time="1372436666198" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,18 +20,15 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="ConvertSortedArrayToBinarySearchTree" />
+    <favorites_list name="IntersectionOfTwoLists" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="convert_to_bst.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/convert_to_bst.py">
+      <file leaf-file-name="intersection_of_two_lists.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/intersection_of_two_lists.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#298#423#0" expanded="false" />
-                <element signature="e#465#1071#0" expanded="false" />
-              </folding>
+            <state line="51" column="20" selection-start="1364" selection-end="1364" vertical-scroll-proportion="0.78426397">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -47,7 +43,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/convert_to_bst.py" />
+        <option value="$PROJECT_DIR$/intersection_of_two_lists.py" />
       </list>
     </option>
   </component>
@@ -83,26 +79,36 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ConvertSortedArrayToBinarySearchTree" />
+              <option name="myItemId" value="IntersectionOfTwoLists" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IntersectionOfTwoLists" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IntersectionOfTwoLists" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../InsertInterval" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.convert_to_bst">
-    <configuration default="false" name="convert_to_bst" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.intersection_of_two_lists">
+    <configuration default="false" name="intersection_of_two_lists" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -113,9 +119,9 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ConvertSortedArrayToBinarySearchTree" />
+      <module name="IntersectionOfTwoLists" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/convert_to_bst.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intersection_of_two_lists.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -132,27 +138,27 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ConvertSortedArrayToBinarySearchTree" />
+      <module name="IntersectionOfTwoLists" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Python.convert_to_bst" />
+      <item index="0" class="java.lang.String" itemvalue="Python.intersection_of_two_lists" />
     </list>
     <recent_temporary>
       <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python.convert_to_bst" />
+        <item index="0" class="java.lang.String" itemvalue="Python.intersection_of_two_lists" />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="23f298c4-a1eb-4701-8d44-2057ffd929de" name="Default" comment="" />
-      <created>1372425950610</created>
-      <updated>1372425950610</updated>
+      <changelist id="2fb922fe-840a-4155-a1c0-392bf6c1cd38" name="Default" comment="" />
+      <created>1372434867071</created>
+      <updated>1372434867071</updated>
     </task>
     <servers />
   </component>
@@ -164,11 +170,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2591415" sideWeight="0.672524" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2591415" sideWeight="0.6709265" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32747602" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3290735" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -240,23 +246,17 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/convert_to_bst.py">
+    <entry file="file://$PROJECT_DIR$/intersection_of_two_lists.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#298#423#0" expanded="false" />
-            <element signature="e#465#1071#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/convert_to_bst.py">
+    <entry file="file://$PROJECT_DIR$/intersection_of_two_lists.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#298#423#0" expanded="false" />
-            <element signature="e#465#1071#0" expanded="false" />
-          </folding>
+        <state line="51" column="20" selection-start="1364" selection-end="1364" vertical-scroll-proportion="0.78426397">
+          <folding />
         </state>
       </provider>
     </entry>
