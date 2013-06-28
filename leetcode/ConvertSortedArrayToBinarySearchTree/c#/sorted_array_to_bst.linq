@@ -27,7 +27,7 @@ public class TreeUtils
 			return null;
 		}
 		
-		int rootIndex = (left + right) / 2;
+		int rootIndex = left + (right - left) / 2;
 		
 		Tree root = new Tree(sortedArray[rootIndex]);
 		root.Left = ConvertToBST(sortedArray, left, rootIndex -1);
