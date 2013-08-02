@@ -17,7 +17,7 @@ Telephone words
 */
 void Main()
 {
-	List<string> result = PhoneNumberUtils.FindLetterCombinations("23");
+	List<string> result = PhoneNumberUtils.FindLetterCombinations("425");
 	
 	result.Dump();
 }
@@ -41,13 +41,18 @@ public class PhoneNumberUtils
 	
 	private static void FindLetterCombinationsHelper(string digits, int currentDigitIndex, string currentCombination, List<string> result)
 	{
-		if( currentDigitIndex == digits.Length)
+		if (currentDigitIndex == digits.Length)
 		{
 			result.Add(currentCombination);
 			return;
 		}
 		
 		int keyPadIndex = digits[currentDigitIndex] - '2';
+		
+		if (keyPadIndex < 0)
+		{
+			return;
+		}
 		
 		for (int i = 0; i < keypad[keyPadIndex].Length; i++)
 		{
