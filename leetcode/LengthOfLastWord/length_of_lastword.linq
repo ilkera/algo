@@ -35,11 +35,6 @@ public class StringUtils
 			end--;
 		}
 		
-		if(end < 0 )
-		{
-			return 0;
-		}
-		
 		int start = end - 1;
 		
 		while(start >= 0 && str[start] != ' ')
