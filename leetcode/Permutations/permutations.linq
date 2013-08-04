@@ -27,7 +27,7 @@ public class Permutation
 	{
 		List<List<int>> result = new List<List<int>>();
 		
-		if(digits == null || digits.Count < 1)
+		if(digits == null || digits.Count < 2)
 		{
 			return result;
 		}
