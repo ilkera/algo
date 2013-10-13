@@ -15,7 +15,7 @@ return 10.
 */
 void Main()
 {
-	int[] bars = {2, 1, 5, 6, 2, 3};
+	int[] bars = {6, 2, 5, 4, 5, 1, 6};
 	
 	int maxArea = Histogram.FindMaxArea(bars);
 	
