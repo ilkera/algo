@@ -7,30 +7,26 @@ void Main()
 }
 
 public class Parity
-{
-	public static bool IsOddParity(int number)
+{	
+	public static bool IsOddParity(int n)
 	{
-		return FindParity(number) % 2 == 1;
+		return FindParity(n) % 2 == 1;
 	}
 	
-	public static bool IsEvenParity(int number)
+	public static bool IsEvenParity(int n)
 	{
-		return FindParity(number) % 2 == 0;
+		return FindParity(n) % 2 == 0;
 	}
 	
-	private static int FindParity(int number)
+	private static int FindParity(int n)
 	{
-		int numberOf1s = 0;
-		
-		while (number != 0)
+		int count = 0;
+		while (n != 0)
 		{
-			if ((number & (number - 1)) == 1)
-				numberOf1s++;
-				
-			number = number & (number - 1);
+			count++;
+			n &= (n - 1);
 		}
-		
-		return numberOf1s;
+		return count;
 	}
 }
 
