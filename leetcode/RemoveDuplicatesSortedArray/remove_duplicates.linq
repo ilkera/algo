@@ -39,12 +39,12 @@ public class ArrayUtils
 			currentItem = array[i];
 			if(currentItem != previous)
 			{
-				array[index++] = currentItem;
+				array[++index] = currentItem;
 			}
 			previous = currentItem;
 		}
-		
-		return index + 1;
+
+	return index + 1;
 	}
 }
 
