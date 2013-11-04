@@ -159,7 +159,7 @@ class BlackJack:
 # Test
 bj = BlackJack()
 
-for index in range(10):
+for index in range(5):
     print("Game %d is starting....." %index)
     bj.start()
     print("\n")
