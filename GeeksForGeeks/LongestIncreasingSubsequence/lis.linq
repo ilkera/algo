@@ -22,6 +22,7 @@ public class LongestIncreasingSubseqeunce
 		int[] sequence = new int[array.Length];
 		
 		sequenceLengths[0] = 1;
+		sequence[0] = -1;
 		
 		for (int i = 1; i < array.Length; i++)
 		{
@@ -44,11 +45,10 @@ public class LongestIncreasingSubseqeunce
 			}
 		}
 		
-		int iCurrent = bestEnd;
-		while (sequence[iCurrent] != -1)
+		
+		for (int iCurrent = bestEnd; iCurrent != -1; iCurrent = sequence[iCurrent])
 		{
 			Console.Write("{0}, ", array[iCurrent]);	
-			iCurrent -= 1;
 		}
 		
 		return maxLength;
