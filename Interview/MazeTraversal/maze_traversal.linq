@@ -14,7 +14,7 @@ public class MazeTraversal
 {
 	private int[,] _maze;
 	private bool[,] _marked;
-	private string[,] _edgeTo;
+	private Tuple<int, int>[,] _edgeTo;
 	private int _originX;
 	private int _originY;
 	private int _rowCount;
@@ -33,7 +33,7 @@ public class MazeTraversal
 		_rowCount = _maze.GetLength(0);
 		_colCount = _maze.GetLength(1);
 		_marked = new bool[_rowCount, _colCount];
-		_edgeTo = new string[_rowCount, _colCount];
+		_edgeTo = new Tuple<int, int>[_rowCount, _colCount];
 		
 		Search(startX, startY);
 	}
@@ -46,32 +46,18 @@ public class MazeTraversal
 			return;
 		}
 		
-		_edgeTo.Dump();
-		
 		// Print
 		int currentX = targetX;
 		int currentY = targetY;
 		
-		string nextPath = null;
 		while (!(currentX == _originX && currentY == _originY))
 		{
 			Console.Write("({0},{1}) ->", currentX, currentY);
-			nextPath = _edgeTo[currentX, currentY];
-			
-			if (string.IsNullOrEmpty(nextPath) == true)
-			{
-				break;
-			}
-			
-			currentX = Convert.ToInt32(nextPath.Split(',')[0]);
-			currentY = Convert.ToInt32(nextPath.Split(',')[1]);
+			currentX = _edgeTo[currentX, currentY].Item1;
+			currentY = _edgeTo[currentX, currentY].Item2;
 		}
 		
-		if (nextPath != null)
-		{
-			// Print origin
-			Console.WriteLine("({0},{1})", currentX, currentY);
-		}
+		Console.WriteLine("({0},{1})", currentX, currentY);
 	}
 	
 	private bool HasPath(int targetX, int targetY)
@@ -83,34 +69,34 @@ public class MazeTraversal
 	{
 		// Visit cell
 		_marked[currentX, currentY] = true;
-		string currentPath = string.Format("{0},{1}", currentX, currentY);
+		Tuple<int, int> current = new Tuple<int, int>(currentX, currentY);
 		
 		// Visit its neighbours
 		// Visit down
 		if (IsValidCell(currentX + 1, currentY) == true)
 		{
-			_edgeTo[currentX + 1, currentY] = currentPath;
+			_edgeTo[currentX+1, currentY] = current;
 			Search(currentX + 1, currentY);
 		}
 		
 		// Visit Up
 		if (IsValidCell(currentX - 1, currentY) == true)
 		{
-			_edgeTo[currentX - 1, currentY] = currentPath;
+			_edgeTo[currentX - 1, currentY] = current;
 			Search(currentX - 1, currentY);
 		}
 		
 		// Visit Left
 		if (IsValidCell(currentX, currentY - 1) == true)
 		{
-			_edgeTo[currentX, currentY -1] = currentPath;
+			_edgeTo[currentX, currentY - 1] = current;
 			Search(currentX, currentY - 1);
 		}
 	
 		// Visit right
 		if (IsValidCell(currentX, currentY + 1) == true)
 		{
-			_edgeTo[currentX, currentY + 1] = currentPath;
+			_edgeTo[currentX, currentY + 1] = current;
 			Search(currentX, currentY + 1);
 		}
 
