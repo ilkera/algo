@@ -6,16 +6,19 @@ void Main()
 	
 	maze.Dump();
 	
-	MazeTraversal mazeTraversal = new MazeTraversal(maze, 3, 2);
+	MazeTraversal mazeTraversal = new MazeTraversal(maze, 3, 3);
 	mazeTraversal.PrintPath(0, 0);
 }
 
 public class MazeTraversal
 {
+	private int[,] _maze;
 	private bool[,] _marked;
 	private string[,] _edgeTo;
 	private int _originX;
 	private int _originY;
+	private int _rowCount;
+	private int _colCount;
 	
 	public MazeTraversal(int[,] maze, int startX, int startY)
 	{
@@ -24,14 +27,15 @@ public class MazeTraversal
 			throw new ArgumentNullException("maze");
 		}
 		
-		this._originX = startX;
-		this._originY = startY;
-		int rowCount = maze.GetLength(0);
-		int colCount = maze.GetLength(1);
-		_marked = new bool[rowCount, colCount];
-		_edgeTo = new string[rowCount, colCount];
+		_maze = maze;
+		_originX = startX;
+		_originY = startY;
+		_rowCount = _maze.GetLength(0);
+		_colCount = _maze.GetLength(1);
+		_marked = new bool[_rowCount, _colCount];
+		_edgeTo = new string[_rowCount, _colCount];
 		
-		Search(maze, startX, startY, rowCount, colCount);
+		Search(startX, startY);
 	}
 	
 	public void PrintPath(int targetX, int targetY)
@@ -39,6 +43,7 @@ public class MazeTraversal
 		if (HasPath(targetX, targetY) == false)
 		{
 			Console.WriteLine("No path");
+			return;
 		}
 		
 		_edgeTo.Dump();
@@ -74,43 +79,58 @@ public class MazeTraversal
 		return _edgeTo[targetX, targetY] != null;
 	}
 	
-	private void Search(int[,] maze, int currentX, int currentY, int rowCount, int colCount)
+	private void Search(int currentX, int currentY)
 	{
 		// Visit cell
 		_marked[currentX, currentY] = true;
 		string currentPath = string.Format("{0},{1}", currentX, currentY);
 		
 		// Visit its neighbours
-		
 		// Visit down
-		if (currentX + 1 < rowCount && _marked[currentX + 1, currentY] == false && maze[currentX + 1, currentY] == 0)
+		if (IsValidCell(currentX + 1, currentY) == true)
 		{
 			_edgeTo[currentX + 1, currentY] = currentPath;
-			Search(maze, currentX + 1, currentY, rowCount, colCount);
+			Search(currentX + 1, currentY);
 		}
 		
 		// Visit Up
-		if (currentX - 1 >= 0 && _marked[currentX - 1, currentY] == false && maze[currentX -1, currentY] == 0)
+		if (IsValidCell(currentX - 1, currentY) == true)
 		{
 			_edgeTo[currentX - 1, currentY] = currentPath;
-			Search(maze, currentX - 1, currentY, rowCount, colCount);
+			Search(currentX - 1, currentY);
 		}
 		
 		// Visit Left
-		if (currentY - 1 >= 0 && _marked[currentX, currentY - 1] == false && maze[currentX, currentY - 1] == 0)
+		if (IsValidCell(currentX, currentY - 1) == true)
 		{
 			_edgeTo[currentX, currentY -1] = currentPath;
-			Search(maze, currentX, currentY - 1, rowCount, colCount);
+			Search(currentX, currentY - 1);
 		}
-		
+	
 		// Visit right
-		if (currentY + 1 < colCount && _marked[currentX, currentY + 1] == false && maze[currentX, currentY + 1] == 0)
+		if (IsValidCell(currentX, currentY + 1) == true)
 		{
 			_edgeTo[currentX, currentY + 1] = currentPath;
-			Search(maze, currentX, currentY + 1, rowCount, colCount);
+			Search(currentX, currentY + 1);
+		}
+
+		_marked[currentX, currentY] = false;
+	}
+	
+	private bool IsValidCell(int targetX, int targetY)
+	{
+		bool isValidX = targetX >= 0 && targetX < _rowCount;
+		bool isValidY = targetY >= 0 && targetY < _colCount;
+		
+		if (isValidX == false || isValidY == false)
+		{
+			return false;
 		}
 		
-		_marked[currentX, currentY] = false;
+		bool isNotMarked = _marked[targetX, targetY] == false;
+		bool hasValueZero = _maze[targetX, targetY] == 0;
+		
+		return isNotMarked && hasValueZero;
 	}
 }
 
