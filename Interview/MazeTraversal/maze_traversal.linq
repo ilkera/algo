@@ -69,34 +69,34 @@ public class MazeTraversal
 	{
 		// Visit cell
 		_marked[currentX, currentY] = true;
-		Tuple<int, int> current = new Tuple<int, int>(currentX, currentY);
+		Tuple<int, int> currentCell = new Tuple<int, int>(currentX, currentY);
 		
 		// Visit its neighbours
 		// Visit down
 		if (IsValidCell(currentX + 1, currentY) == true)
 		{
-			_edgeTo[currentX+1, currentY] = current;
+			_edgeTo[currentX+1, currentY] = currentCell;
 			Search(currentX + 1, currentY);
 		}
 		
 		// Visit Up
 		if (IsValidCell(currentX - 1, currentY) == true)
 		{
-			_edgeTo[currentX - 1, currentY] = current;
+			_edgeTo[currentX - 1, currentY] = currentCell;
 			Search(currentX - 1, currentY);
 		}
 		
 		// Visit Left
 		if (IsValidCell(currentX, currentY - 1) == true)
 		{
-			_edgeTo[currentX, currentY - 1] = current;
+			_edgeTo[currentX, currentY - 1] = currentCell;
 			Search(currentX, currentY - 1);
 		}
 	
 		// Visit right
 		if (IsValidCell(currentX, currentY + 1) == true)
 		{
-			_edgeTo[currentX, currentY + 1] = current;
+			_edgeTo[currentX, currentY + 1] = currentCell;
 			Search(currentX, currentY + 1);
 		}
 
